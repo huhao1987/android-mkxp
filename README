@@ -1,3 +1,14 @@
-This is port is currently unstable and should only be used for development purposes
+Just to record the issues I faced when I was compiling.
+1. Don`t just download the code from xpeia64 or pulsejet`s repo, you`d better to fork the whole project from pulsejet because of some files` missing. It can fix a lot of errors.
+2. "xxd" error. Run the make_xxd.sh in Jni folder can fix the problem.
+3. Error from pixman. The pixman in the project seem miss some files.So I use https://github.com/servo/pixman to replace all files in the folder. 
 
-Join the chat at https://gitter.im/xperia64/android-mkxp
+How to compile the lib:
+1. Install Android NDK. 
+   Method 1: Install Android studio and install NDK from it.
+   Method 2: Download from offical website.
+
+2. setup the environment of NDK
+  Please check it from Google.
+
+3. Enter into the Jni folder of your project in the Terminal.Use command "ndk-build"
